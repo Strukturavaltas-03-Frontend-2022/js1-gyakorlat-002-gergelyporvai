@@ -5,18 +5,6 @@
 - A HTML-template egy lista, amelynek a listaelemei a kapott tömb értékeit tartalmazzák.
 */
 
-/* const generateList = (stringArray) => {
-  return (
-    "<ul>" +
-    stringArray.toString(
-      stringArray.forEach((item) => {
-        return "<li>" + stringArray.toString(item) + "</li>";
-      })
-    ) +
-    "</ul>"
-  );
-}; */
-
 const generateList = (stringArray) => {
   return (
     "<ul>" +
