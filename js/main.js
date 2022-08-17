@@ -5,7 +5,7 @@
 - A HTML-template egy lista, amelynek a listaelemei a kapott tömb értékeit tartalmazzák.
 */
 
-const generateList = (stringArray) => {
+/* const generateList = (stringArray) => {
   return (
     "<ul>" +
     stringArray.toString(
@@ -13,6 +13,16 @@ const generateList = (stringArray) => {
         return "<li>" + stringArray.toString(item) + "</li>";
       })
     ) +
+    "</ul>"
+  );
+}; */
+
+const generateList = (stringArray) => {
+  return (
+    "<ul>" +
+    stringArray.map((item) => {
+      return "<li>" + item + "</li>";
+    }) +
     "</ul>"
   );
 };
