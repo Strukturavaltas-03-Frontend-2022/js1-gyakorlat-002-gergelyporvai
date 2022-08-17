@@ -4,3 +4,9 @@
 - A függvény szorozza meg a tömbelemek értékét 1.27-tel, majd pedig 
 __térjen vissza__ az elemek egész számra kerekített összegével!
 */
+
+const brutto = (numArray) => {
+  return parseInt(
+    numArray.map((num) => num * 1.27).reduce((acc, curr) => (acc += curr))
+  );
+};
