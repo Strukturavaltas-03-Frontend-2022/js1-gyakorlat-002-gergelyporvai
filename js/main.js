@@ -8,9 +8,11 @@
 const generateList = (stringArray) => {
   return (
     "<ul>" +
-    stringArray.forEach((item) => {
-      "<li>" + item + "</li>";
-    }) +
+    stringArray.toString(
+      stringArray.forEach((item) => {
+        return "<li>" + stringArray.toString(item) + "</li>";
+      })
+    ) +
     "</ul>"
   );
 };
